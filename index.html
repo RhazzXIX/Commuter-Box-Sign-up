@@ -2,17 +2,45 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Commuter Box</title>
+    <title>Commute Chatter Box</title>
     <link rel="stylesheet" href="style.css">
     <script src="java.js" defer></script>
 </head>
 <body>
-    <div class="banner">
-        <div><img src="./image/jeepney clear.png" alt="jeepney logo" srcset=""></div>
-        <div class="hero">
-            <h1>Commuter</h1>
-            <h1>Box</h1>
-        </div>
+    <div class="page">
+        <section class="banner">
+            <div class="logo">
+                <img src="./image/jeepney clear.png" alt="jeepney logo" class="logo">
+                <div class="banner-text">
+                    <h1>Commute</h1>
+                    <h1>Chatter Box</h1>
+                </div>
+            </div>
+            <footer class="copyright">Photo by Name on website</footer>
+        </section>
+        <main>
+            <header class="persuade">
+                <p><em>This is not a real online service!</em></p>
+                <p>Is the commute taking a lot of time? Want to know what is happening on your route? Want to get directions to your destination? </p>
+                <p>Chat with someone along the way! Sign up now!</p>
+            </header>
+            <section class="form">
+                <form action="" method="get" id="sign-up">
+                    <h2>Lets do this!</h2>
+                    <div>
+                        <label for="fname">FIRST NAME</label>
+                        <input type="text" id="fname" required />
+                        <label for=""></label>
+                    </div>
+                    <div><input type="text"></div>
+                    <div><label for=""></label><input type="text"></div>
+                </form>
+            </section>
+            <footer>
+                <button type="submit" form="sign-up">Create Account</button>
+                <p>Already have an account? Log in!</p>
+            </footer>
+        </main>
     </div>
     
 </body>
