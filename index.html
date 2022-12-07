@@ -30,7 +30,7 @@
                     <div>
                         <div>
                             <label for="fname">FIRST NAME <span aria-label="required">*</span></label>
-                            <input type="text" name="fname" id="fname" required />
+                            <input type="text" name="fname" id="fname" title="John" required />
                         </div>
                         <div>
                             <label for="lname">LAST NAME <span aria-label="required">*</span></label>
@@ -40,22 +40,24 @@
                     <div>
                         <div>
                             <label for="email">EMAIL <span aria-label="required">*</span></label>
-                            <input type="email" name="email" id="email" required />
+                            <input type="email" name="email" id="email" title="user@email.com" required />
                         </div>
                         <div>
                             <label for="phone-number">PHONE NUMBER</label>
                             <input type="text" name="phone-number" id="phone-number" inputmode="numeric" />
                         </div>
                     </div>
-                    <div>
-                        <div>
+                    <div class="last-row">
+                        <div class="password">
                             <label for="pwd">PASSOWRD <span aria-label="required">*</span></label>
                             <input type="password" name="password" id="pwd" required />
+                            <span id="match"></span>
                         </div>
                         <div>
-                            <label for="confirm-pwd">CONFIRM PASSWORD</label>
-                            <input type="text" name="confirm-pwd" id="confirm-pwd" required>
+                            <label for="confirm-pwd">CONFIRM PASSWORD <span aria-label="required">*</span></label>
+                            <input type="password" name="confirm-pwd" id="confirm-pwd" required />
                         </div>
+                        
                     </div>
                 </form>
             </section>

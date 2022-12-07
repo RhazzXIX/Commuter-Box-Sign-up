@@ -17,7 +17,7 @@ body {
 
 div.page {
     height: 100%;
-    width: 100%;
+    width: max(1500px, 100%);
 
     display: flex;
     /* flex-direction: column; */
@@ -127,14 +127,35 @@ div > input {
     padding: 3px 5px;
     
     font-size: 1.3rem;
-    
+    font-family:  'Times New Roman', arial, sans-serif;
+
     border-radius: 5px;
     border: 1px solid #E5E7EB;
 
+}
 
+div > input:focus,
+div > input:active {
+    outline: none;
+    border: 1px solid lightblue;
+    box-shadow: 1px 1px rgb(168, 168, 168);
 }
 
 div > label {
+    font-size: 0.8rem;
+}
+
+form#sign-up > div:last-of-type {
+    margin-bottom: 12px;
+}
+
+div.password {
+    position: relative;
+}
+
+div > span.match::before {
+    color: red;
+    content: "* Password doesn't match";
     font-size: 0.8rem;
 }
 
@@ -149,12 +170,17 @@ main > footer {
 
 footer > button {
     border: none;
-    box-shadow: 1px 1px rgb(95, 95, 95);
+    box-shadow: 3px 3px rgb(95, 95, 95);
     padding: 10px 30px;
     border-radius: 5px;
     width: 180px;
     
-    background: linear-gradient(168deg, grey, rgb(238, 232, 232));
-    color: rgb(255, 255, 255);
+    background: linear-gradient(168deg, rgb(62, 100, 65), white, rgb(146, 146, 146));
+    color: rgb(0, 0, 0);
     font-weight: 700;
+}
+
+footer > button:active {
+    transform: translateY(1px);
+    box-shadow: 2px 2px rgb(49, 49, 49);
 }
