@@ -13,16 +13,22 @@
 body {
     height: 100vh;
     width: max(760px, 100%);
-    background: url('./image/manila\ traffic.jpg');
-    background-size: cover;
+    background-color: black;
+    display: flex;
+    justify-content: center;
 }
 
 div.page {
     height: 100%;
-    width: auto;
+    width: min(1400px, 100%);
+
+    border: 2px solid rgb(224, 224, 224);
+    box-shadow: 3px 3px 10px rgb(209, 209, 209);
+    
+    background: url('./image/manila\ traffic.jpg');
+    background-size: cover;
 
     display: flex;
-    /* flex-direction: column; */
     flex-wrap: wrap;
 }
 
