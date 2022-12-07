@@ -154,9 +154,14 @@ div.password {
 }
 
 div > span.match::before {
+    position: absolute;
     color: red;
     content: "* Password doesn't match";
     font-size: 0.8rem;
+}
+
+div > input[type='password'].error {
+    border: 1px solid red;
 }
 
 main > footer {
