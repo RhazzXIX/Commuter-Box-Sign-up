@@ -104,11 +104,38 @@ form#sign-up {
     border-bottom: 1px solid grey;
     box-shadow: 1px 1px 5px grey;
     
-    padding: 40px;
+    padding: 20px 40px;
+    
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    font-family: 'Courier New', Courier, monospace;
 }
 
-fieldset {
-    border: none;
+form#sign-up h2 {
+    margin-bottom: 8px;
+}
+
+form#sign-up h2~div {
+    display: flex;
+    gap: 32px;
+}
+
+div > input {
+    display: block;
+    padding: 3px 5px;
+    
+    font-size: 1.3rem;
+    
+    border-radius: 5px;
+    border: 1px solid #E5E7EB;
+
+
+}
+
+div > label {
+    font-size: 0.8rem;
 }
 
 main > footer {
