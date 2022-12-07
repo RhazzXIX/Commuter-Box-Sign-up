@@ -112,5 +112,22 @@ fieldset {
 }
 
 main > footer {
+    margin-top: 22px;
     padding-left: 40px;
+    
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+}
+
+footer > button {
+    border: none;
+    box-shadow: 1px 1px rgb(95, 95, 95);
+    padding: 10px 30px;
+    border-radius: 5px;
+    width: 180px;
+    
+    background: linear-gradient(168deg, grey, rgb(238, 232, 232));
+    color: rgb(255, 255, 255);
+    font-weight: 700;
 }
