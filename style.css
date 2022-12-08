@@ -71,6 +71,7 @@ section.banner img {
 section.banner footer {
     color: rgb(255, 255, 255);
     font-weight: 700;
+    font-size: 0.7rem;
     text-align: center;
 
     width: 100%;
