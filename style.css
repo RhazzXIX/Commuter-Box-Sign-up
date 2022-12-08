@@ -179,7 +179,7 @@ main > footer {
     display: flex;
     flex-direction: column;
     row-gap: 16px;
-    margin-bottom: 100px;
+    padding-bottom: 44px;
 }
 
 footer > button {
@@ -193,8 +193,34 @@ footer > button {
     color: rgb(0, 0, 0);
     font-weight: 700;
 }
+footer > button:hover {
+    background: linear-gradient(168deg, rgb(146, 146, 146), white, rgb(62, 100, 65));
+} 
 
 footer > button:active {
     transform: translateY(1px);
     box-shadow: 2px 2px rgb(49, 49, 49);
+    background: linear-gradient(168deg, rgb(62, 100, 65), white, rgb(146, 146, 146));
+}
+
+a {
+    text-decoration: none;
+}
+
+a.credits {
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+    background-color: rgba(175, 255, 228, 0.2);
+    border-radius: 5px;
+    padding: 5px;
+}
+
+a.credits:hover {
+    background-color: rgb(120, 250, 120);
+}
+
+
+a.refresh {
+    font-weight: 700;
+    color: rgb(42, 107, 36);
 }
